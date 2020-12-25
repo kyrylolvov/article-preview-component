@@ -101,6 +101,7 @@ body {
   z-index: 5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  outline:none;
 }
 
 .footer-btn:hover {
