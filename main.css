@@ -1,0 +1,240 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 95vh;
+  background-color: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.card {
+  height: 280px;
+  max-width: 90rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 720px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 5px 15px 25px rgba(36, 25, 25, 0.05);
+          box-shadow: 5px 15px 25px rgba(36, 25, 25, 0.05);
+}
+
+.card-img {
+  height: auto;
+  -ms-flex-preferred-size: 110%;
+      flex-basis: 110%;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 0;
+}
+
+.img-furniture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+  height: 280px;
+  width: 283px;
+}
+
+.card-text {
+  padding: 20px 40px;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 0;
+}
+
+.card-heading {
+  font-size: 20px;
+  color: #48556a;
+  width: 357px;
+}
+
+.card-paragraph {
+  margin: 16px 0 24px 0;
+  color: #6d7f97;
+  font-size: 13px;
+  width: 357px;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.footer-name {
+  font-weight: 700;
+  color: #48556a;
+  margin: 0;
+}
+
+.footer-date {
+  margin: 0;
+  color: #9eafc2;
+}
+
+.footer-btn {
+  margin: 0 0 0 146px;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #edf1fa;
+  outline: none;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  border-radius: 0.5rem;
+  background-color: #48556a;
+  color: white;
+  width: 234px;
+  height: 56px;
+  margin: -75px 0 0 220px;
+  -webkit-box-shadow: 5px 15px 25px rgba(36, 25, 25, 0.05);
+          box-shadow: 5px 15px 25px rgba(36, 25, 25, 0.05);
+}
+
+.popup-text {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 16px;
+  height: 20px;
+  padding-top: 3px;
+}
+
+.popup-icons {
+  height: 20px;
+}
+
+.popup-icons svg:not(:last-child) {
+  margin-right: 12px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin: 7px 0px 0px -13px;
+  border-top: 20px solid #48556a;
+}
+
+.share-svg:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.footer-btn:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .card {
+    border-radius: 1rem;
+    width: 327px;
+    height: 470px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img-furniture {
+    width: 327px;
+    height: 208px;
+  }
+  .card-text {
+    padding: 20px 32px 20px 32px;
+  }
+  .card-heading {
+    font-size: 16px;
+    width: 263px;
+  }
+  .card-paragraph {
+    width: 263px;
+  }
+  .footer-description {
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .footer-btn {
+    margin-left: 60px;
+    margin-top: 4px;
+  }
+  .popup {
+    border-radius: 0px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: -16px 0 0 -32px;
+    width: 295px;
+    height: 66px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-left: 32px;
+  }
+  .arrow-down {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-description {
+    font-size: 10px;
+    padding-top: 7px;
+  }
+  .card {
+    height: 510px;
+    width: 300px;
+  }
+  .popup {
+    width: 268px;
+  }
+  .card-heading,
+  .card-paragraph {
+    width: 240px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
